@@ -1,0 +1,89 @@
+.container {
+    background-color: var(--background-not-found);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-white);
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', serif;
+    position: relative;
+    overflow: hidden;
+}
+
+.logoWrapper {
+    margin-bottom: 30px;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+.title {
+    font-size: clamp(60px, 15vw, 100px); /* Адаптивный размер */
+    margin: 0;
+    font-weight: 300;
+    letter-spacing: 12px;
+    color: #D4AF37;
+    z-index: 1;
+}
+
+.divider {
+    width: 40px;
+    height: 1px;
+    background-color: #D4AF37;
+    margin: 24px 0;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+.subtitle {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin: 0 0 16px 0;
+    font-weight: 400;
+    z-index: 1;
+}
+
+.description {
+    font-size: 15px;
+    color: #A0A0A0;
+    line-height: 1.8;
+    margin-bottom: 45px;
+    font-family: Arial, sans-serif;
+    max-width: 300px;
+    z-index: 1;
+}
+
+.button {
+    padding: 14px 34px;
+    border: 1px solid #D4AF37;
+    color: #D4AF37;
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: all 0.4s ease;
+    border-radius: 1px;
+    z-index: 1;
+    background: transparent;
+}
+
+.button:hover {
+    background-color: #D4AF37;
+    color: var(--background-not-found);
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+}
+
+.backgroundEffect {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(212, 175, 55, 0.07) 0%, rgba(18, 18, 18, 0) 70%);
+    z-index: 0;
+    pointer-events: none;
+}
