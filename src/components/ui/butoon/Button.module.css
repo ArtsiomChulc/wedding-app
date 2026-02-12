@@ -1,0 +1,29 @@
+.button {
+    min-width: 194px;
+    border-radius: 50px;
+    border: none;
+    background: var(--button-background);
+    font-family: var(--font-family), serif;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: center;
+    color: var(--text-white);
+    cursor: pointer;
+    transition: background, color 0.2s ease-in-out;
+
+    &.headerBtn {
+        padding: 8px 20px;
+    }
+
+    &.contentBtn {
+        padding: 12px 24px;
+    }
+
+    &:hover {
+        background: var(--button-hover);
+    }
+
+    &:active {
+        color: var(--text-gray);
+    }
+}
