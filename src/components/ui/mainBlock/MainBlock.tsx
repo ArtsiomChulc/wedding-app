@@ -1,6 +1,6 @@
 import Text from '@/components/ui/text/Text';
 import TextBlock from '@/components/ui/mainBlock/components/textBlock/TextBlock';
-import ImageBlock from '@/components/ui/mainBlock/components/imageBlock/ImageBlock';
+import ImageBlock from '@/shared/components/imageBlock/ImageBlock';
 import SS from '@/shared/pictures/VR-1.png';
 import s from './MainBlock.module.css';
 
