@@ -1,0 +1,65 @@
+.base {
+
+}
+
+.lg_title {
+    font-family: var(--second-family), serif;
+    font-weight: 800;
+    font-size: var(--lg-font);
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.md_title {
+    font-family: var(--second-family), serif;
+    font-weight: 700;
+    font-size: var(--md-font);
+    line-height: 110%;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.xl_title {
+    font-family: var(--second-family), serif;
+    font-weight: 700;
+    font-size: var(--xl-font);
+    line-height: 120%;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.sm_title {
+    font-family: var(--second-family), serif;
+    font-weight: 600;
+    font-size: var(--sm-font);
+    line-height: 110%;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.card_title {
+    font-family: var(--font-family), serif;
+    font-weight: 700;
+    font-size: var(--card-font);
+    line-height: 110%;
+    text-transform: uppercase;
+    color: var(--text-white);
+}
+
+.description {
+    font-family: var(--font-family), serif;
+    font-weight: 400;
+    font-size: var(--desc-font);
+    line-height: 150%;
+    color: var(--text-desc);
+}
+
+.description_sm {
+    font-family: var(--font-family), serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 150%;
+    color: var(--text-desc-sm);
+}
