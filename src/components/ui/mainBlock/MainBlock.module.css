@@ -1,0 +1,45 @@
+.main_block {
+    @media (max-width: 768px) {
+        text-align: center;
+    }
+
+    .title {
+        margin-bottom: 40px;
+    }
+
+    .block_wrapper {
+        min-height: 450px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px;
+
+        @media (max-width: 768px) {
+            gap: 16px;
+        }
+
+        .text_block {
+            flex-basis: calc(50% - 8px);
+
+
+            @media (max-width: 768px) {
+                text-align: left;
+                flex: 1 1 100%;
+                order: 1;
+            }
+        }
+
+        .image_block {
+            flex: 1 1 calc(50% - 8px);
+            position: relative;
+            min-height: 450px; /* Высота для десктопа */
+
+            @media (max-width: 768px) {
+                flex: 1 1 100%;
+                min-height: 350px; /* Уменьшаем высоту на мобилке, чтобы фото не было огромным */
+                order: 2; /* Фото под текстом */
+            }
+        }
+    }
+}
