@@ -16,8 +16,8 @@
 
     /*font-size*/
 
-    --lg-font: calc(42px + 32 * (100vw / 1440));
-    --md-font: calc(30px + 16 * (100vw / 1440));
+    --lg-font: calc(36px + 30 * (100vw / 1440));
+    --md-font: calc(22px + 14 * (100vw / 1440));
     --xl-font: calc(20px + 14 * (100vw / 1440));
     --sm-font: calc(18px + 12 * (100vw / 1440));
     --card-font: calc(15px + 8 * (100vw / 1440));
