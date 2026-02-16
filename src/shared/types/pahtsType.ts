@@ -6,3 +6,8 @@ export type PathsType = {
     contacts: string;
     agencies: string;
 };
+
+export type TextDataType = {
+    id: string;
+    text: string;
+}
