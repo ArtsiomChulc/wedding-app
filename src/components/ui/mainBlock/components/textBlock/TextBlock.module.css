@@ -1,0 +1,30 @@
+.text_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+        align-items: center;
+    }
+
+    > h2 {
+        margin-bottom: 40px;
+
+        @media (max-width: 768px) {
+            text-align: center;
+        }
+    }
+
+    > p {
+        margin-bottom: 8px;
+    }
+
+    > ul {
+        padding-left: 16px;
+    }
+
+    > ul > li {
+        list-style: circle;
+    }
+}
