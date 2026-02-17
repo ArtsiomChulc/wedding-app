@@ -1,0 +1,67 @@
+.loaderContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--header-bc); /* Мягкий светлый фон */
+    backdrop-filter: blur(10px);
+    z-index: 99999;
+}
+
+.weddingLoader {
+    position: relative;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ring {
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border: 3px solid transparent;
+    border-top-color: #d4af37; /* Золотой цвет */
+    border-radius: 50%;
+    animation: spin 2s linear infinite;
+}
+
+/* Второе кольцо смещено и крутится иначе */
+.ring:nth-child(2) {
+    width: 50px;
+    height: 50px;
+    border-top-color: #f3cf7a; /* Светлое золото */
+    animation: spin-reverse 2.5s linear infinite;
+    margin-left: 20px; /* Эффект переплетения */
+}
+
+.text {
+    position: absolute;
+    bottom: -30px;
+    font-family: 'Playfair Display', serif; /* Или ваш свадебный шрифт */
+    font-style: italic;
+    color: #8c7325;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes spin-reverse {
+    0% { transform: rotate(360deg); }
+    100% { transform: rotate(0deg); }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 0.5; }
+    50% { opacity: 1; }
+}
