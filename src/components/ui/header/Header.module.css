@@ -1,6 +1,7 @@
 .header_container {
     max-width: 1200px;
     width: 100%;
+    margin: 0 auto;
     padding-inline: 15px;
     padding-block: 10px;
     border-bottom: 1px solid rgba(34, 34, 34, 0.3);
