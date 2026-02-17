@@ -7,13 +7,13 @@
     --text-desc-sm: #a6a6a6;;
     --button-background: #ff5a1f;
     --button-hover: rgba(255, 90, 31, 0.73);
-    --menu-background: rgba(96, 94, 94, 0.25);
+    --menu-background: rgba(96, 94, 94, 0.7);
     --header-bc: rgba(85, 85, 85, 0.2);
     --menu-text: #E1E1E1;
     --menu-text-accent: #D4AF37;
 
     --font-family: Inter;
-    --second-family: Libertinus_Serif;
+    --second-family: Raleway;
 
     /*font-size*/
 
@@ -47,6 +47,7 @@ body {
     font-family: var(--font-family), serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    position: relative;
 }
 
 a {

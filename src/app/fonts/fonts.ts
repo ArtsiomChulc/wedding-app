@@ -1,4 +1,4 @@
-import { Inter, Libertinus_Serif } from 'next/font/google';
+import { Inter, Libertinus_Serif, Raleway } from 'next/font/google';
 
 export const inter = Inter({
     variable: '--font-inter',
@@ -7,9 +7,9 @@ export const inter = Inter({
     adjustFontFallback: false,
 });
 
-export const libertinus = Libertinus_Serif({
-    variable: '--font-libertinus',
+export const raleway = Raleway({
+    variable: '--font-raleway',
     subsets: ['cyrillic'],
-    weight: ['600'],
+    weight: ['600', '800', '400'],
     adjustFontFallback: false,
 });

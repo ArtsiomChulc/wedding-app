@@ -36,7 +36,6 @@
     font-weight: 600;
     font-size: var(--sm-font);
     line-height: 110%;
-    text-transform: uppercase;
     color: var(--text-white);
 }
 
