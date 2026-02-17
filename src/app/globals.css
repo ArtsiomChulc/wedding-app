@@ -25,10 +25,20 @@
     --desc-font: calc(13px + 8 * (100vw / 1440));
 }
 
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
 html,
 body {
     max-width: 100vw;
-    overflow-x: hidden;
+    min-height: 100vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 body {
@@ -37,12 +47,6 @@ body {
     font-family: var(--font-family), serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-}
-
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
 }
 
 a {

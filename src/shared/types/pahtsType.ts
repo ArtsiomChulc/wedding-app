@@ -1,10 +1,8 @@
 export type PathsType = {
     home: string;
-    weddings: string;
-    'corporate-event': string;
-    other_event: string;
+    about: string;
+    services: string;
     contacts: string;
-    agencies: string;
 };
 
 export type TextDataType = {

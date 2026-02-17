@@ -1,4 +1,7 @@
 .header_container {
+    max-width: 1200px;
+    width: 100%;
+    padding-inline: 15px;
     padding-block: 10px;
     border-bottom: 1px solid rgba(34, 34, 34, 0.3);
     display: flex;
@@ -8,7 +11,6 @@
     position: relative;
     z-index: 9999;
     background: var(--header-bc);
-    margin-bottom: 30px;
 
     @media screen and (max-width: 768px) {
         justify-content: end;
@@ -18,7 +20,7 @@
         width: 100%;
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content: end;
 
         .left_header, .right_header {
             display: flex;
@@ -143,7 +145,7 @@
         transition: 0.3s;
         z-index: 9999;
 
-        .left_header, .right_header {
+        .right_header {
             flex-direction: column;
         }
 

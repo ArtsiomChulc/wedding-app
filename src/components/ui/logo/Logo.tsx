@@ -1,5 +1,7 @@
 import Link from 'next/link';
 import { paths } from '@/shared/paths/paths';
+import Text from '@/shared/components/text/Text';
+import s from './Logo.module.css';
 
 interface LogoProps {
     size?: number;
@@ -11,16 +13,11 @@ export default function Logo({
     primaryColor = '#D4AF37',
 }: LogoProps) {
     return (
-        <div
-            style={{
-                height: size,
-                width: size,
-            }}
-        >
+        <div className={s.logo_container}>
             <Link href={paths.home}>
                 <svg
-                    width='100%'
-                    height='100%'
+                    width={`${size}`}
+                    height={`${size}`}
                     viewBox='0 0 120 120'
                     fill='none'
                 >
@@ -30,7 +27,7 @@ export default function Logo({
                         r='54'
                         stroke={primaryColor}
                         strokeWidth='2'
-                        opacity='0.8'
+                        opacity='1'
                     />
 
                     <circle
@@ -40,7 +37,7 @@ export default function Logo({
                         stroke={primaryColor}
                         strokeWidth='0.5'
                         strokeDasharray='2 4'
-                        opacity='0.5'
+                        opacity='0.9'
                     />
 
                     <path
@@ -75,6 +72,9 @@ export default function Logo({
                     </defs>
                 </svg>
             </Link>
+            <Text as={'p'} variant={'description'} className={s.logo_text}>
+                Влад Рынкевич
+            </Text>
         </div>
     );
 }

@@ -11,7 +11,7 @@ export default function MainBlock() {
             <div className={s.main_block}>
                 <BlockWrapper>
                     <Text as={'h1'} variant={'lg_title'} className={s.title}>
-                        Владислав Рынкевич
+                        Креативный Ведущий
                     </Text>
                     <TextBlock>
                         <TextBlockMain />

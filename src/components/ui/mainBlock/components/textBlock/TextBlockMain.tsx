@@ -6,22 +6,10 @@ export default function TextBlockMain() {
     return (
         <div className={s.text_wrapper}>
             <Text as={'h2'} variant={'sm_title'}>
-                Ведущий, которого рекомендуют друзьям
+                Корпоративы, свадьбы, юбилеи, Новый год, выпускные вечера,
+                форумы и саммиты, презентации, открытие новых заведений — мне
+                по плечу любая задача
             </Text>
-            <Text as={'p'} variant={'description'}>
-                Провожу мероприятия в Минске:
-            </Text>
-            <ul>
-                {textData.map(({ text, id }) => {
-                    return (
-                        <li key={id}>
-                            <Text as={'p'} variant={'description'}>
-                                {text}
-                            </Text>
-                        </li>
-                    );
-                })}
-            </ul>
         </div>
     );
 }

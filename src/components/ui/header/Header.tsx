@@ -22,34 +22,20 @@ export default function Header() {
 
     return (
         <div className={s.header_container}>
-            <Logo/>
+            <Logo size={45}/>
             <div className={headerClasses}>
-                <div className={s.left_header}>
-                    <Link
-                        href={paths.weddings}
-                        className={`${pathname === paths.weddings ? s.active : ''}`}
-                    >
-                        Свадьбы
-                    </Link>
-                    <Link
-                        href={paths['corporate-event']}
-                        className={`${pathname === paths['corporate-event'] ? s.active : ''}`}
-                    >
-                        Корпоративы
-                    </Link>
-                    <Link
-                        href={paths.other_event}
-                        className={`${pathname === paths.other_event ? s.active : ''}`}
-                    >
-                        Другое
-                    </Link>
-                </div>
                 <div className={s.right_header}>
                     <Link
-                        href={paths.agencies}
-                        className={`${pathname === paths.agencies ? s.active : ''}`}
+                        href={paths.about}
+                        className={`${pathname === paths.about ? s.active : ''}`}
                     >
-                        Агенствам
+                        Обо мне
+                    </Link>
+                    <Link
+                        href={paths.services}
+                        className={`${pathname === paths.services ? s.active : ''}`}
+                    >
+                        Услуги
                     </Link>
                     <Link
                         href={paths.contacts}
