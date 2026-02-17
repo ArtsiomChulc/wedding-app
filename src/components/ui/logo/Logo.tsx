@@ -14,7 +14,7 @@ export default function Logo({
 }: LogoProps) {
     return (
         <div className={s.logo_container}>
-            <Link href={paths.home}>
+            <Link href={paths.home} prefetch={true}>
                 <svg
                     width={`${size}`}
                     height={`${size}`}

@@ -7,9 +7,12 @@ import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Logo from '@/components/ui/logo/Logo';
 import s from './Header.module.css';
+import { useClickOutside } from '@/shared/helpers/hooks/useClickOutside';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
+
+    const ref = useClickOutside<HTMLDivElement>(() => setIsOpen(false));
 
     const pathname = usePathname();
 
@@ -21,7 +24,7 @@ export default function Header() {
 
 
     return (
-        <div className={s.header_container}>
+        <div className={s.header_container} ref={ref}>
             <div className={s.header_wrapper}>
                 <Logo size={45} />
                 <div className={headerClasses}>
@@ -29,18 +32,24 @@ export default function Header() {
                         <Link
                             href={paths.about}
                             className={`${pathname === paths.about ? s.active : ''}`}
+                            prefetch={true}
+                            onClick={() => setIsOpen(false)}
                         >
                             Обо мне
                         </Link>
                         <Link
                             href={paths.services}
                             className={`${pathname === paths.services ? s.active : ''}`}
+                            prefetch={true}
+                            onClick={() => setIsOpen(false)}
                         >
                             Услуги
                         </Link>
                         <Link
                             href={paths.contacts}
                             className={`${pathname === paths.contacts ? s.active : ''}`}
+                            prefetch={true}
+                            onClick={() => setIsOpen(false)}
                         >
                             Контакты
                         </Link>

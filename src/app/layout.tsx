@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { inter, raleway } from '@/app/fonts/fonts';
 import './globals.css';
+import NextTopLoader from 'nextjs-toploader';
 
 export const metadata: Metadata = {
     title: 'Владислав Рынкевич | Ведущий',
@@ -20,7 +21,16 @@ export default function ErrorLayout({
 }>) {
     return (
         <html lang='ru' className={`${inter.variable} ${raleway.variable}`}>
-            <body>{children}</body>
+            <body>
+                <NextTopLoader
+                    color='#2299DD'
+                    initialPosition={0.08}
+                    crawlSpeed={300}
+                    height={5}
+                    showSpinner={false}
+                />
+                {children}
+            </body>
         </html>
     );
 }
