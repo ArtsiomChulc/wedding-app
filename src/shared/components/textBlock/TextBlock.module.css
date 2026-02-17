@@ -1,0 +1,10 @@
+.text_block {
+    flex-basis: calc(50% - 8px);
+
+
+    @media (max-width: 768px) {
+        text-align: left;
+        flex: 1 1 100%;
+        order: 2;
+    }
+}

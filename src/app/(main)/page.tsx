@@ -1,12 +1,22 @@
 import MainBlock from '@/components/ui/mainBlock/MainBlock';
-import DescBlock from '@/components/ui/descBlock/DescBlock';
-import s from './MainPage.module.css';
+import background from '@/shared/pictures/background_main.webp';
+import ImageBlock from '@/shared/components/imageBlock/ImageBlock';
 
 export default function Home() {
     return (
-        <div className={s.main_page}>
+        <>
+            <ImageBlock
+                src={background}
+                alt={'Ведущий мероприятий'}
+                priority
+                fill
+                style={{
+                    opacity: 0.6,
+                    objectPosition: 'center',
+                    objectFit: 'cover',
+                }}
+            />
             <MainBlock />
-            <DescBlock />
-        </div>
+        </>
     );
 }

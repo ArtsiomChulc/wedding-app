@@ -5,8 +5,8 @@ import { paths } from '@/shared/paths/paths';
 import Button from '@/components/ui/butoon/Button';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import s from './Header.module.css';
 import Logo from '@/components/ui/logo/Logo';
+import s from './Header.module.css';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);

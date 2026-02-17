@@ -1,23 +1,23 @@
-import Text from '@/components/ui/text/Text';
-import TextBlock from '@/components/ui/mainBlock/components/textBlock/TextBlock';
-import ImageBlock from '@/shared/components/imageBlock/ImageBlock';
-import SS from '@/shared/pictures/VR-1.png';
+import Text from '@/shared/components/text/Text';
+import TextBlockMain from '@/components/ui/mainBlock/components/textBlock/TextBlockMain';
+import BlockWrapper from '@/shared/components/blockWrapper/BlockWrapper';
+import TextBlock from '@/shared/components/textBlock/TextBlock';
+import Container from '@/components/ui/container/Container';
 import s from './MainBlock.module.css';
 
 export default function MainBlock() {
     return (
-        <div className={s.main_block}>
-            <Text as={'h1'} variant={'lg_title'} className={s.title}>
-                Владислав Рынкевич
-            </Text>
-            <div className={s.block_wrapper}>
-                <div className={s.text_block}>
-                    <TextBlock />
-                </div>
-                <div className={s.image_block}>
-                    <ImageBlock src={SS} alt={'Ведущий мероприятий'} priority />
-                </div>
+        <Container>
+            <div className={s.main_block}>
+                <BlockWrapper>
+                    <Text as={'h1'} variant={'lg_title'} className={s.title}>
+                        Владислав Рынкевич
+                    </Text>
+                    <TextBlock>
+                        <TextBlockMain />
+                    </TextBlock>
+                </BlockWrapper>
             </div>
-        </div>
+        </Container>
     );
 }

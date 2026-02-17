@@ -1,8 +1,8 @@
-import Text from '@/components/ui/text/Text';
+import Text from '@/shared/components/text/Text';
 import { textData } from '@/components/ui/mainBlock/components/textBlock/schemas/textData';
-import s from './TextBlock.module.css';
+import s from './TextBlockMain.module.css';
 
-export default function TextBlock() {
+export default function TextBlockMain() {
     return (
         <div className={s.text_wrapper}>
             <Text as={'h2'} variant={'sm_title'}>
