@@ -1,4 +1,4 @@
-import { Inter, Libertinus_Serif, Raleway } from 'next/font/google';
+import { Inter, Raleway } from 'next/font/google';
 
 export const inter = Inter({
     variable: '--font-inter',
