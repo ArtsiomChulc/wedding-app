@@ -35,11 +35,12 @@
                 display: flex;
                 align-items: center;
                 width: 100%;
-                gap: 35px;
+                gap: 20px;
 
                 > a {
                     display: inline-block;
                     width: 100%;
+                    white-space: nowrap;
                     &.active {
                         color: var(--menu-text-accent);
                     }
