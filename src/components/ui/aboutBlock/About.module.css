@@ -1,0 +1,14 @@
+.about_container {
+
+    text-align: center;
+    padding-inline: 10px;
+    padding-top: 40px;
+
+    > h2 {
+        margin-bottom: 40px;
+    }
+
+    > p:first-of-type {
+        margin-bottom: 30px;
+    }
+}
