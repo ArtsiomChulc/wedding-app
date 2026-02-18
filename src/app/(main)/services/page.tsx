@@ -1,3 +1,5 @@
+import Container from '@/components/ui/container/Container';
+
 export default function Page() {
-    return <div>services</div>;
+    return <Container>services</Container>;
 };
