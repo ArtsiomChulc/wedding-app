@@ -18,7 +18,6 @@
     font-weight: 700;
     font-size: var(--md-font);
     line-height: 110%;
-    text-transform: uppercase;
     color: var(--text-white);
 }
 
@@ -32,7 +31,7 @@
 }
 
 .sm_title {
-    font-family: var(--second-family), serif;
+    font-family: var(--font-family), serif;
     font-weight: 600;
     font-size: var(--sm-font);
     line-height: 120%;
@@ -44,7 +43,6 @@
     font-weight: 700;
     font-size: var(--card-font);
     line-height: 110%;
-    text-transform: uppercase;
     color: var(--text-white);
 }
 

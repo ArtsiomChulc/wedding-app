@@ -6,8 +6,9 @@ import Button from '@/components/ui/butoon/Button';
 import { useEffect, useState } from 'react';
 import { usePathname } from 'next/navigation';
 import Logo from '@/components/ui/logo/Logo';
-import s from './Header.module.css';
+import { IoHomeOutline } from 'react-icons/io5';
 import { useClickOutside } from '@/shared/helpers/hooks/useClickOutside';
+import s from './Header.module.css';
 
 export default function Header() {
     const [isOpen, setIsOpen] = useState(false);
@@ -15,6 +16,8 @@ export default function Header() {
     const ref = useClickOutside<HTMLDivElement>(() => setIsOpen(false));
 
     const pathname = usePathname();
+
+    const isMainPage = pathname === '/';
 
     const headerClasses = `${s.header} ${isOpen ? s.open : ''}`;
 
@@ -29,6 +32,15 @@ export default function Header() {
                 <Logo size={45} />
                 <div className={headerClasses}>
                     <div className={s.right_header}>
+                        {!isMainPage && (
+                            <Link
+                                href={paths.home}
+                                prefetch={true}
+                                onClick={() => setIsOpen(false)}
+                            >
+                                <IoHomeOutline />
+                            </Link>
+                        )}
                         <Link
                             href={paths.about}
                             className={`${pathname === paths.about ? s.active : ''}`}
