@@ -1,8 +1,8 @@
 import type { Metadata } from 'next';
 import { ReactNode } from 'react';
 import { inter, raleway } from '@/app/fonts/fonts';
-import './globals.css';
 import NextTopLoader from 'nextjs-toploader';
+import './globals.css';
 
 export const metadata: Metadata = {
     title: 'Владислав Рынкевич | Ведущий',
