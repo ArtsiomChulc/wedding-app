@@ -38,7 +38,7 @@ export default function Header() {
                                 prefetch={true}
                                 onClick={() => setIsOpen(false)}
                             >
-                                <IoHomeOutline />
+                                <IoHomeOutline size={30} />
                             </Link>
                         )}
                         <Link
